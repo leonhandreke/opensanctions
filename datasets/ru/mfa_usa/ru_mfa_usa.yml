@@ -20,6 +20,8 @@ data:
   url: https://mid.ru/ru/maps/us/1814243/
   format: HTML
   lang: rus
+dates:
+  formats: ["%d.%m.%y"]
 assertions:
   min:
     schema_entities:
