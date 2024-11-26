@@ -1,0 +1,26 @@
+title: Russian Ministry of Foreign Affairs list of US citizens under sanctions
+entry_point: crawler.py
+prefix: ru-mfa-usa
+coverage:
+  frequency: daily
+  start: 2024-11-26
+load_db_uri: ${OPENSANCTIONS_DATABASE_URI}
+summary: >
+  U.S. citizens under personal sanctions, including ban on entry into the Russian Federation
+publisher:
+  name: "Ministry of Foreign Affairs of the Russian Federation"
+  descrition: |
+    The Ministry of Foreign Affairs of the Russian Federation is the central government
+    institution charged with leading the foreign policy and foreign relations of Russia.
+  country: ru
+  url: https://mid.ru/
+  official: true
+url: https://mid.ru/ru/maps/us/1814243/
+data:
+  url: https://mid.ru/ru/maps/us/1814243/
+  format: HTML
+  lang: rus
+assertions:
+  min:
+    schema_entities:
+      Person: 4000
